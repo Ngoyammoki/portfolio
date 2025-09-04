@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moki | IT Professional & Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Moki</h1>
+    <p>IT Professional | Aspiring Full Stack Developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#learning">Learning</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <br></br>
+    <button id="darkToggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a retired soccer player turned IT professional, currently working as a Windows administrator with entry-level experience in Linux and computer networking. My passion for technology and community empowerment has led me to pursue full stack development, with a focus on building digital platforms that solve real-world problems.
+    </p>
+    <p>
+      Whether it's configuring secure systems or designing intuitive web apps, I bring discipline, adaptability, and a drive to learn — inspired by elite minds like Dr. Charls Awuzie and Mr. Nguetnya Bernard , now applied to the digital world.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Systems Administration:</strong> Windows Server, Active Directory, Group Policy</li>
+      <li><strong>Linux Fundamentals:</strong> Ubuntu, Bash scripting, file permissions</li>
+      <li><strong>Networking:</strong> TCP/IP, DNS, DHCP, basic routing and switching</li>
+      <li><strong>Web Development:</strong> HTML, CSS, JavaScript (learning React & Node.js)</li>
+      <li><strong>Version Control:</strong> Git, GitHub</li>
+      <li><strong>Deployment:</strong> GitHub Pages, Netlify (learning Heroku)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div>
+      <h3>Digital Marketplace MVP (In Progress)</h3>
+      <p>
+        A bilingual platform for practical learning and product sales, tailored to Cameroon and Africa. Built using HTML/CSS/JS, with plans to integrate React and MongoDB.
+      </p>
+    </div>
+    <div>
+      <h3>System Automation Scripts</h3>
+      <p>
+        PowerShell and Bash scripts for automating user account creation, backups, and system monitoring.
+      </p>
+    </div>
+    <div>
+      <h3>Portfolio Website</h3>
+      <p>
+        This site! Hosted on GitHub Pages, showcasing my IT journey and development goals.
+      </p>
+    </div>
+  </section>
+
+  <section id="learning">
+    <h2>Learning Journey</h2>
+    <ul>
+      <li>✅ Completed: freeCodeCamp Responsive Web Design</li>
+      <li>🧠 In Progress: JavaScript Algorithms & Data Structures</li>
+      <li>📚 Upcoming: React, Node.js, MongoDB (MERN stack)</li>
+      <li>🎓 Exploring: Harvard CS50 Web Programming, IUSCA S&C for tech-inspired training</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+  <h2>Let’s Connect</h2>
+    <p>If you're building something meaningful and need a systems-savvy developer with a passion for impact, I’d love to hear from you.</p>
+    <ul>
+      <li>Email: moki.dev@example.com</li>
+      <li>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></li>
+    </ul>
+
+ 
+  <form id="contactForm">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" required /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required /><br />
+
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" rows="4" required></textarea><br />
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p id="formStatus"></p>
+</section>
+
+  <footer>
+    <p>© 2025 Moki. Built with passion and purpose.</p>
+  </footer>
+</body>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    document.getElementById("formStatus").textContent = "Thanks! Your message has been received.";
+    this.reset();
+  });
+</script>
+
+<script>
+  const toggle = document.getElementById("darkToggle");
+  toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    document.querySelectorAll("header, footer").forEach(el => el.classList.toggle("dark-mode"));
+  });
+</script>
+
+</html>

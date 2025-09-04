@@ -1,0 +1,88 @@
+﻿
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  background: #fff;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #fff;
+}
+
+/* === DARK MODE STYLES === */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+/* Apply dark mode to all sections */
+body.dark-mode section {
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header and footer */
+header.dark-mode,
+footer.dark-mode {
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+}
+
+/* Headings and text */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode li {
+  color: #f4f4f4;
+}
+
+/* Navigation links */
+body.dark-mode nav a {
+  color: #90caf9;
+}
+
+/* Form fields */
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #1e1e1e;
+  color: #f4f4f4;
+  border: 1px solid #444;
+}
+
+/* Buttons */
+body.dark-mode button {
+  background-color: #333;
+  color: #f4f4f4;
+  border: 1px solid #555;
+}
